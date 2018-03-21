@@ -5,6 +5,21 @@ var map
 var markers = []
 
 /**
+ * Register service worker for offline viewing of site
+ */
+ function registerServiceWorker() {
+   if (!navigator.serviceWorker) return;
+
+   navigator.serviceWorker.register('/sw.js').then(function(reg) {
+     if (!navigator.serviceWorker.controller) {
+       return;
+     }
+   });
+ }
+
+ registerServiceWorker();
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -176,11 +191,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     });
     self.markers.push(marker);
   });
-}
-
-/**
- * Register service worker for offline viewing of site
- */
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/mws-restaurant-stage-1/sw.js');
 }
