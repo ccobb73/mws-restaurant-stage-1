@@ -180,7 +180,7 @@ nav h1 a {
   max-width: 100%;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -274,7 +274,7 @@ nav h1 a {
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
-  font-weight: 300; 
+  font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
 }
@@ -310,7 +310,7 @@ nav h1 a {
     height: calc(100% - 80px);
     position: fixed;
     right: 0;
-    top: 80px;      
+    top: 80px;
     width: 50%;
     padding-top: 0;
   }
@@ -327,7 +327,7 @@ nav h1 a {
     width: 50%;
   }
   #reviews-container {
-    width: 50%; 
+    width: 50%;
   }
   #reviews-list li {
     width: 90%;
@@ -339,7 +339,7 @@ nav h1 a {
   height: 1px;
   width: 1px;
   position: absolute;
-  overflow: hidden; 
+  overflow: hidden;
   top: -10px;
 }
 
@@ -356,5 +356,3 @@ header .skip-link:focus {
   position: absolute;
   top: 0;
 }
-
-
